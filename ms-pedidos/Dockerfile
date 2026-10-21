@@ -7,8 +7,8 @@ FROM eclipse-temurin:25-jre
 LABEL authors="sophia" \
       MAINTAINER="Sophia" \
       application="ms-pedidos" \
-      version = "1.0"
+      version="1.0"
 WORKDIR /opt/app
 COPY --from=build /opt/app/target/*.jar /opt/app/app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app. jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

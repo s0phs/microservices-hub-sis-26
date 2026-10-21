@@ -8,4 +8,4 @@ LABEL authors="sophia"
 WORKDIR /opt/app
 COPY --from=build /opt/app/target/*.jar /opt/app/app.jar
 EXPOSE 8082
-ENTRYPOINT ["java", "-jar", "app. jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
